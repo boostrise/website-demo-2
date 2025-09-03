@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BoostRise – AI Automatizáció</title>
+  <meta name="description" content="AI automatizációk, amelyek időt spórolnak és bevételt növelnek. Google Workspace, ChatGPT, Zoho CRM, Slack, Zapier.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a href="/" class="brand">
+        <img src="logo.png" alt="BoostRise logo" height="40" />
+      </a>
+      <input id="nav-toggle" type="checkbox" />
+      <label class="burger" for="nav-toggle">&#9776;</label>
+      <ul class="menu">
+        <li><a href="#services">Szolgáltatások</a></li>
+        <li><a href="#case">Esettanulmány</a></li>
+        <li><a href="#contact">Kapcsolat</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h1>AI Automatizáció,<br>ami <span class="accent">eredményt</span> hoz</h1>
+      <p>Folyamatoptimalizálás: Google Workspace · ChatGPT · Zoho CRM · Slack · Zapier</p>
+      <a class="btn" href="#contact">Ingyenes 20p feltérképezés</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="services" class="container grid">
+      <div class="card">
+        <h3>Sales/CRM</h3>
+        <p>Lead routing, automatikus follow-up, pipeline riportok, e-mailek és DM-ek automatizálása.</p>
+      </div>
+      <div class="card">
+        <h3>Operáció</h3>
+        <p>Dokumentum-sablonok, jóváhagyási flow, meeting jegyzet → akciópontok, státuszriportok.</p>
+      </div>
+      <div class="card">
+        <h3>Marketing</h3>
+        <p>Űrlap → CRM → kampány; tartalomgenerálás és publikálás több csatornára.</p>
+      </div>
+    </section>
+
+    <section id="case" class="band">
+      <div class="container">
+        <h2>Esettanulmány</h2>
+        <p>25 fős ügynökségnél 40% admin-idő csökkenés 30 nap alatt – standardizált onboarding + automatikus riportálás.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Kapcsolat</h2>
+      <p>Kérj időpontot, és megnézzük, hol a legnagyobb azonnali megtérülés.</p>
+      <form action="https://formspree.io/f/your-id" method="POST" class="form">
+        <input name="name" placeholder="Név" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Miben segíthetünk?" required></textarea>
+        <button class="btn" type="submit">Küldés</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container foot">
+    <small>© <span id="y"></span> BoostRise. Minden jog fenntartva.</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
